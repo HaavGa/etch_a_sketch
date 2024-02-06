@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body
+    class="bg-gray-400 flex flex-col justify-center items-center h-screen space-y-3"
+  >
+    <h1 class="text-5xl text-blue-700 font-bold mb-3 italic">
+      Etch-a-Sketch
+    </h1>
+    <div class="flex space-x-3">
+      <button
+        id="btn"
+        class="bg-red-500 px-3 py-1.5 rounded-md hover:bg-red-400"
+      >
+        How many squares?
+      </button>
+      <button
+        id="btn-static"
+        class="bg-[#90EE90] px-3 py-1.5 rounded-md hover:bg-[#90EE90]/80"
+      >
+        Static color
+      </button>
+      <button
+        id="btn-white-to-black"
+        class="bg-gradient-to-r from-white to-black px-3 py-1.5 rounded-md hover:bg-red-400"
+      >
+        White To Black
+      </button>
+      <button
+        id="btn-rainbow"
+        class="bg-gradient-to-r from-red-500 via-yellow-500 to-violet-500 px-3 py-1.5 rounded-md"
+      >
+        Rainbow
+      </button>
+      <button
+        id="btn-eraser"
+        class="bg-gray-700 text-white px-3 py-1.5 rounded-md"
+      >
+        Eraser
+      </button>
+    </div>
+    <div id="container" class="bg-white border-white"></div>
+    <button
+      id="btn-erase-board"
+      class="bg-gray-700 text-white px-3 py-1.5 rounded-md"
+    >
+      Erase Board
+    </button>
+  </body>
+</html>
